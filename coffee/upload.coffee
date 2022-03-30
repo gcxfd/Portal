@@ -16,3 +16,4 @@ await QINIU.upload_dir(
   'blog-js.xvc.com'
   (li)=>li
 )
+process.exit()
