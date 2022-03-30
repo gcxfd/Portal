@@ -53,7 +53,7 @@ function getConfirmationPageTitle({confirmationType}) {
 const Header = ({onBack, showConfirmation, confirmationType}) => {
     //const {member} = useContext(AppContext);
     //let title = isPaidMember({member}) ? 'Change plan' : 'Choose a plan';
-    let title = '请邮件联系 ir@xvc.com 授权';
+    let title = '扫码加微信或邮件ir@xvc.com授权';
     if (showConfirmation) {
         title = getConfirmationPageTitle({confirmationType});
     }

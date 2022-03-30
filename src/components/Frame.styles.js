@@ -23,7 +23,8 @@ const FrameStyles = `
 .gh-portal-main-title {
     text-align: center;
     color: var(--grey0);
-    line-height: 1.1em;
+    line-height: 1.5em;
+    font-weight:300;
 }
 
 .gh-portal-text-disabled {
@@ -698,7 +699,7 @@ const FrameStyles = `
 const MobileStyles = `
 @media (max-width: 1440px) {
     .gh-portal-popup-container:not(.full-size):not(.preview) {
-        width: 460px;
+        width: 600px;
     }
 
     .gh-portal-input {
