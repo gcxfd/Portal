@@ -309,13 +309,13 @@ export default class OfferPage extends React.Component {
         const {brandColor, onAction} = this.context;
         return (
             <div className='gh-portal-signup-message'>
-                <div>'已注册了'?</div>
+                <div>已注册了?</div>
                 <button
                     className='gh-portal-btn gh-portal-btn-link'
                     style={{color: brandColor}}
                     onClick={() => onAction('switchPage', {page: 'signin'})}
                 >
-                    <span>登录</span>
+                    <span>点此登录</span>
                 </button>
             </div>
         );
