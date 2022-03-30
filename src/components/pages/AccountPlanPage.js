@@ -51,8 +51,9 @@ function getConfirmationPageTitle({confirmationType}) {
 }
 
 const Header = ({onBack, showConfirmation, confirmationType}) => {
-    const {member} = useContext(AppContext);
-    let title = isPaidMember({member}) ? 'Change plan' : 'Choose a plan';
+    //const {member} = useContext(AppContext);
+    //let title = isPaidMember({member}) ? 'Change plan' : 'Choose a plan';
+    let title = '请邮件联系 ir@xvc.com 授权';
     if (showConfirmation) {
         title = getConfirmationPageTitle({confirmationType});
     }
@@ -235,6 +236,8 @@ const UpgradePlanSection = ({
     }
     return (
         <section>
+            {/* 
+            
             <div className={`gh-portal-section gh-portal-accountplans-main ${singlePlanClass}`}>
                 <PlansOrProductSection
                     showLabel={false}
@@ -244,7 +247,7 @@ const UpgradePlanSection = ({
                     onPlanCheckout={onPlanCheckout}
                 />
             </div>
-            {/* <ActionButton
+            <ActionButton
                 onClick={e => onPlanCheckout(e)}
                 isRunning={isRunning}
                 isPrimary={true}

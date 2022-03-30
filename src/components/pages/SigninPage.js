@@ -76,7 +76,7 @@ export default class SigninPage extends React.Component {
         const {action} = this.context;
         let retry = false;
         const isRunning = (action === 'signin:running');
-        let label = isRunning ? 'Sending login link...' : 'Continue';
+        let label = isRunning ? 'Sending login link...' : '→';
         const disabled = isRunning ? true : false;
         if (action === 'signin:failed') {
             label = 'Retry';
