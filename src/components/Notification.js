@@ -34,7 +34,7 @@ const NotificationText = ({type, status, context}) => {
         const firstname = context.member.firstname || '';
         return (
             <p>
-                {(firstname ? ', ' + firstname : '')} 欢迎回来!
+                {(firstname ? firstname : '')} 欢迎回来!
             </p>
         );
     } else if (type === 'signin' && status === 'error') {
