@@ -13,7 +13,7 @@ const setup = (overrides) => {
     );
     const emailInput = utils.getByLabelText(/email/i);
     const submitButton = utils.queryByRole('button', {name: 'Continue'});
-    const signupButton = utils.queryByRole('button', {name: 'Sign up'});
+    const signupButton = utils.queryByRole('button', {name: '注册'});
     return {
         emailInput,
         submitButton,
