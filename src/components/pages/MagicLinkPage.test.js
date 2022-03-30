@@ -6,7 +6,7 @@ const setup = (overrides) => {
     const {mockOnActionFn, ...utils} = render(
         <MagicLinkPage />
     );
-    const inboxText = utils.getByText(/we've sent you a login link/i);
+    const inboxText = utils.getByText(/登录链接已发送/i);
     const closeBtn = utils.queryByRole('button', {name: 'Close'});
     return {
         inboxText,
