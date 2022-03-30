@@ -230,10 +230,12 @@ const UpgradePlanSection = ({
 }) => {
     // const {action, brandColor} = useContext(AppContext);
     // const isRunning = ['checkoutPlan:running'].includes(action);
+    /*
     let singlePlanClass = '';
     if (plans.length === 1) {
         singlePlanClass = 'singleplan';
     }
+    */
     return (
         <section>
             {/* 
