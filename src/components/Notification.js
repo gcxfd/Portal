@@ -34,19 +34,19 @@ const NotificationText = ({type, status, context}) => {
         const firstname = context.member.firstname || '';
         return (
             <p>
-                Welcome back{(firstname ? ', ' + firstname : '')}!<br />You've successfully signed in.
+                {(firstname ? ', ' + firstname : '')} 欢迎回来!
             </p>
         );
     } else if (type === 'signin' && status === 'error') {
         return (
             <p>
-                Could not sign in. Login link expired. <a href={signinPortalLink} target="_parent">Click here to retry</a>
+                登录链接已经过期失效。 <a href={signinPortalLink} target="_parent">点此重试</a>
             </p>
         );
     } else if (type === 'signup' && status === 'success') {
         return (
             <p>
-                You've successfully subscribed to <br /><strong>{context.site.title}</strong>
+                你已经成功订阅了 <br /><strong>{context.site.title}</strong>
             </p>
         );
     } else if (type === 'signup-paid' && status === 'success') {
