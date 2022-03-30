@@ -1,0 +1,7 @@
+{
+  "type": "module",
+  "devDependencies": {
+    "@rmw/qiniu": "^0.0.24",
+    "@rmw/thisdir": "^0.0.2"
+  }
+}
