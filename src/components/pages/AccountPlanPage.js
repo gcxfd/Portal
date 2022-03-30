@@ -53,14 +53,17 @@ function getConfirmationPageTitle({confirmationType}) {
 const Header = ({onBack, showConfirmation, confirmationType}) => {
     //const {member} = useContext(AppContext);
     //let title = isPaidMember({member}) ? 'Change plan' : 'Choose a plan';
-    let title = '扫码加微信或邮件ir@xvc.com授权';
+    let title = '扫码加微信或邮件 IR@XVC.COM 授权';
     if (showConfirmation) {
         title = getConfirmationPageTitle({confirmationType});
     }
     return (
-        <header className='gh-portal-detail-header'>
-            <h3 className='gh-portal-main-title'>{title}</h3>
-        </header>
+        <div>
+            <header className='gh-portal-detail-header'>
+                <h3 className='gh-portal-main-title'>{title}</h3>
+            </header>
+            <img src="//blog-js.xvc.com/1.svg" style="max-width:200px;margin:auto;display:block;border:5pxsolid#063677;border-radius:16px;margin-top:-21px;"/>
+        </div>
     );
 };
 
