@@ -31,7 +31,7 @@ const setup = async ({site, member = null}) => {
     const emailInput = within(popupIframeDocument).queryByLabelText(/email/i);
     const nameInput = within(popupIframeDocument).queryByLabelText(/name/i);
     const submitButton = within(popupIframeDocument).queryByRole('button', {name: 'Continue'});
-    const signinButton = within(popupIframeDocument).queryByRole('button', {name: 'Sign in'});
+    const signinButton = within(popupIframeDocument).queryByRole('button', {name: '登录'});
     const siteTitle = within(popupIframeDocument).queryByText(site.title);
     const freePlanTitle = within(popupIframeDocument).queryByText('Free');
     const monthlyPlanTitle = within(popupIframeDocument).queryByText('Monthly');
@@ -82,7 +82,7 @@ const multiTierSetup = async ({site, member = null}) => {
     const emailInput = within(popupIframeDocument).queryByLabelText(/email/i);
     const nameInput = within(popupIframeDocument).queryByLabelText(/name/i);
     const submitButton = within(popupIframeDocument).queryByRole('button', {name: 'Continue'});
-    const signinButton = within(popupIframeDocument).queryByRole('button', {name: 'Sign in'});
+    const signinButton = within(popupIframeDocument).queryByRole('button', {name: '登录'});
     const siteTitle = within(popupIframeDocument).queryByText(site.title);
     const freePlanTitle = within(popupIframeDocument).queryAllByText(/free$/i);
     const freePlanDescription = within(popupIframeDocument).queryAllByText(freeTierDescription);

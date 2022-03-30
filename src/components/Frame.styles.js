@@ -246,7 +246,7 @@ const FrameStyles = `
     bottom: 0;
     left: 0;
     animation: fadein 0.2s;
-    background: linear-gradient(315deg , rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.1) 100%);
+    background: linear-gradient(315deg , rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.3) 100%);
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);

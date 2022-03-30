@@ -15,7 +15,7 @@ const setup = (overrides) => {
     const nameInput = utils.getByLabelText(/name/i);
     const submitButton = utils.queryByRole('button', {name: 'Continue'});
     const chooseButton = utils.queryAllByRole('button', {name: 'Choose'});
-    const signinButton = utils.queryByRole('button', {name: 'Sign in'});
+    const signinButton = utils.queryByRole('button', {name: '登录'});
     return {
         nameInput,
         emailInput,

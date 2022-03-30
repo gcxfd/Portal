@@ -145,7 +145,7 @@ export default class OfferPage extends React.Component {
                 type: 'email',
                 value: member?.email || state.email,
                 placeholder: 'jamie@example.com',
-                label: 'Email',
+                label: '邮箱',
                 name: 'email',
                 disabled: !!member,
                 required: true,
@@ -167,7 +167,7 @@ export default class OfferPage extends React.Component {
                 type: 'text',
                 value: member?.name || state.name,
                 placeholder: 'Jamie Larson',
-                label: 'Name',
+                label: '姓名',
                 name: 'name',
                 disabled: !!member,
                 required: true,
@@ -309,13 +309,13 @@ export default class OfferPage extends React.Component {
         const {brandColor, onAction} = this.context;
         return (
             <div className='gh-portal-signup-message'>
-                <div>Already a member?</div>
+                <div>'已注册了'?</div>
                 <button
                     className='gh-portal-btn gh-portal-btn-link'
                     style={{color: brandColor}}
                     onClick={() => onAction('switchPage', {page: 'signin'})}
                 >
-                    <span>Sign in</span>
+                    <span>登录</span>
                 </button>
             </div>
         );
