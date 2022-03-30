@@ -61,8 +61,8 @@ export default class SigninPage extends React.Component {
             {
                 type: 'email',
                 value: state.email,
-                placeholder: 'jamie@example.com',
-                label: 'Email',
+                placeholder: '123@abc.com',
+                label: '邮箱',
                 name: 'email',
                 required: true,
                 errorMessage: errors.email || '',
@@ -99,8 +99,8 @@ export default class SigninPage extends React.Component {
         const brandColor = this.context.brandColor;
         return (
             <div className='gh-portal-signup-message'>
-                <div>Don't have an account?</div>
-                <button className='gh-portal-btn gh-portal-btn-link' style={{color: brandColor}} onClick={() => this.context.onAction('switchPage', {page: 'signup'})}><span>Sign up</span></button>
+                <div>没有账户？</div>
+                <button className='gh-portal-btn gh-portal-btn-link' style={{color: brandColor}} onClick={() => this.context.onAction('switchPage', {page: 'signup'})}><span>点此注册</span></button>
             </div>
         );
     }
@@ -139,7 +139,7 @@ export default class SigninPage extends React.Component {
         return (
             <header className='gh-portal-signin-header'>
                 {this.renderSiteLogo()}
-                <h1 className="gh-portal-main-title">Sign in</h1>
+                <h1 className="gh-portal-main-title">登录</h1>
             </header>
         );
     }

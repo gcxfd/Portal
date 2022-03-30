@@ -247,8 +247,6 @@ const FrameStyles = `
     left: 0;
     animation: fadein 0.2s;
     background: linear-gradient(315deg , rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.1) 100%);
-    backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);

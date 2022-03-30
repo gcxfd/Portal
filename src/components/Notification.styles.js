@@ -21,7 +21,6 @@ const NotificationStyles = `
         font-size: 1.3rem;
         letter-spacing: 0.2px;
         background: rgba(33,33,33,0.95);
-        backdrop-filter: blur(8px);
         color: var(--white);
         border-radius: 7px;
         box-shadow: 0 3.2px 3.6px rgba(0, 0, 0, 0.024), 0 8.8px 10px -5px rgba(0, 0, 0, 0.08);
