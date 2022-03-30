@@ -35,11 +35,11 @@ describe('SigninPage', () => {
     test('can call signin action with email', () => {
         const {emailInput, submitButton, mockOnActionFn} = setup();
 
-        fireEvent.change(emailInput, {target: {value: 'member@example.com'}});
-        expect(emailInput).toHaveValue('member@example.com');
+        fireEvent.change(emailInput, {target: {value: 'member@abc.com'}});
+        expect(emailInput).toHaveValue('member@abc.com');
 
         fireEvent.click(submitButton);
-        expect(mockOnActionFn).toHaveBeenCalledWith('signin', {email: 'member@example.com'});
+        expect(mockOnActionFn).toHaveBeenCalledWith('signin', {email: 'member@abc.com'});
     });
 
     test('can call swithPage for signup', () => {

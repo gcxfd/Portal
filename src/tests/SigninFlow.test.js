@@ -5,7 +5,7 @@ import {site as FixtureSite} from '../utils/test-fixtures';
 import setupGhostApi from '../utils/api.js';
 
 const setup = async ({site, member = null}) => {
-    const ghostApi = setupGhostApi({siteUrl: 'https://example.com'});
+    const ghostApi = setupGhostApi({siteUrl: 'https://abc.com'});
     ghostApi.init = jest.fn(() => {
         return Promise.resolve({
             site,
@@ -56,7 +56,7 @@ const setup = async ({site, member = null}) => {
 };
 
 const multiTierSetup = async ({site, member = null}) => {
-    const ghostApi = setupGhostApi({siteUrl: 'https://example.com'});
+    const ghostApi = setupGhostApi({siteUrl: 'https://abc.com'});
     ghostApi.init = jest.fn(() => {
         return Promise.resolve({
             site,
@@ -135,13 +135,13 @@ describe('Signin', () => {
             expect(nameInput).not.toBeInTheDocument();
             expect(submitButton).toBeInTheDocument();
 
-            fireEvent.change(emailInput, {target: {value: 'jamie@example.com'}});
+            fireEvent.change(emailInput, {target: {value: '123@abc.com'}});
 
-            expect(emailInput).toHaveValue('jamie@example.com');
+            expect(emailInput).toHaveValue('123@abc.com');
 
             fireEvent.click(submitButton);
             expect(ghostApi.member.sendMagicLink).toHaveBeenLastCalledWith({
-                email: 'jamie@example.com'
+                email: '123@abc.com'
             });
 
             const magicLink = await within(popupIframeDocument).findByText(/sent you a login link/i);
@@ -160,13 +160,13 @@ describe('Signin', () => {
             expect(nameInput).not.toBeInTheDocument();
             expect(submitButton).toBeInTheDocument();
 
-            fireEvent.change(emailInput, {target: {value: 'jamie@example.com'}});
+            fireEvent.change(emailInput, {target: {value: '123@abc.com'}});
 
-            expect(emailInput).toHaveValue('jamie@example.com');
+            expect(emailInput).toHaveValue('123@abc.com');
 
             fireEvent.click(submitButton);
             expect(ghostApi.member.sendMagicLink).toHaveBeenLastCalledWith({
-                email: 'jamie@example.com'
+                email: '123@abc.com'
             });
 
             const magicLink = await within(popupIframeDocument).findByText(/sent you a login link/i);
@@ -185,13 +185,13 @@ describe('Signin', () => {
             expect(nameInput).not.toBeInTheDocument();
             expect(submitButton).toBeInTheDocument();
 
-            fireEvent.change(emailInput, {target: {value: 'jamie@example.com'}});
+            fireEvent.change(emailInput, {target: {value: '123@abc.com'}});
 
-            expect(emailInput).toHaveValue('jamie@example.com');
+            expect(emailInput).toHaveValue('123@abc.com');
 
             fireEvent.click(submitButton);
             expect(ghostApi.member.sendMagicLink).toHaveBeenLastCalledWith({
-                email: 'jamie@example.com'
+                email: '123@abc.com'
             });
 
             const magicLink = await within(popupIframeDocument).findByText(/sent you a login link/i);
@@ -224,13 +224,13 @@ describe('Signin', () => {
             expect(nameInput).not.toBeInTheDocument();
             expect(submitButton).toBeInTheDocument();
 
-            fireEvent.change(emailInput, {target: {value: 'jamie@example.com'}});
+            fireEvent.change(emailInput, {target: {value: '123@abc.com'}});
 
-            expect(emailInput).toHaveValue('jamie@example.com');
+            expect(emailInput).toHaveValue('123@abc.com');
 
             fireEvent.click(submitButton);
             expect(ghostApi.member.sendMagicLink).toHaveBeenLastCalledWith({
-                email: 'jamie@example.com'
+                email: '123@abc.com'
             });
 
             const magicLink = await within(popupIframeDocument).findByText(/sent you a login link/i);
@@ -249,13 +249,13 @@ describe('Signin', () => {
             expect(nameInput).not.toBeInTheDocument();
             expect(submitButton).toBeInTheDocument();
 
-            fireEvent.change(emailInput, {target: {value: 'jamie@example.com'}});
+            fireEvent.change(emailInput, {target: {value: '123@abc.com'}});
 
-            expect(emailInput).toHaveValue('jamie@example.com');
+            expect(emailInput).toHaveValue('123@abc.com');
 
             fireEvent.click(submitButton);
             expect(ghostApi.member.sendMagicLink).toHaveBeenLastCalledWith({
-                email: 'jamie@example.com'
+                email: '123@abc.com'
             });
 
             const magicLink = await within(popupIframeDocument).findByText(/sent you a login link/i);
@@ -274,13 +274,13 @@ describe('Signin', () => {
             expect(nameInput).not.toBeInTheDocument();
             expect(submitButton).toBeInTheDocument();
 
-            fireEvent.change(emailInput, {target: {value: 'jamie@example.com'}});
+            fireEvent.change(emailInput, {target: {value: '123@abc.com'}});
 
-            expect(emailInput).toHaveValue('jamie@example.com');
+            expect(emailInput).toHaveValue('123@abc.com');
 
             fireEvent.click(submitButton);
             expect(ghostApi.member.sendMagicLink).toHaveBeenLastCalledWith({
-                email: 'jamie@example.com'
+                email: '123@abc.com'
             });
 
             const magicLink = await within(popupIframeDocument).findByText(/sent you a login link/i);

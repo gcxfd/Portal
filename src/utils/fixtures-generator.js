@@ -36,7 +36,7 @@ export function getSiteData({
     portalButtonIcon: portal_button_icon = 'icon-1',
     portalButtonSignupText: portal_button_signup_text = 'Subscribe now',
     portalButtonStyle: portal_button_style = 'icon-and-text',
-    membersSupportAddress: members_support_address = 'support@example.com',
+    membersSupportAddress: members_support_address = 'support@abc.com',
     newsletters = []
 } = {}) {
     return {
@@ -103,8 +103,8 @@ export function getOfferData({
 }
 
 export function getMemberData({
-    name = 'Jamie Larson',
-    email = 'jamie@example.com',
+    name = '某某',
+    email = '123@abc.com',
     firstname = 'Jamie',
     subscriptions = [],
     paid = false,
@@ -270,7 +270,7 @@ export function getSubscriptionData({
         customer: {
             id: `cus_${objectId()}`,
             name: 'Jamie',
-            email: 'jamie@example.com'
+            email: '123@abc.com'
         },
         plan: {
             id: `price_${objectId()}`,

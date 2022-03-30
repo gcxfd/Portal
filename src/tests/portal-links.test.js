@@ -4,7 +4,7 @@ import {appRender, within} from '../utils/test-utils';
 import setupGhostApi from '../utils/api';
 
 const setup = async ({site, member = null, showPopup = true}) => {
-    const ghostApi = setupGhostApi({siteUrl: 'https://example.com'});
+    const ghostApi = setupGhostApi({siteUrl: 'https://abc.com'});
     ghostApi.init = jest.fn(() => {
         return Promise.resolve({
             site,

@@ -104,7 +104,7 @@ export const site = getSiteData({
     portalButtonIcon: 'icon-1',
     portalButtonSignupText: 'Subscribe now',
     portalButtonStyle: 'icon-and-text',
-    membersSupportAddress: 'support@example.com',
+    membersSupportAddress: 'support@abc.com',
     newsletters: [
         {
             id: 'weekly',
@@ -125,8 +125,8 @@ export const offer = getOfferData({
 
 export const member = {
     free: getMemberData({
-        name: 'Jamie Larson',
-        email: 'jamie@example.com',
+        name: '某某',
+        email: '123@abc.com',
         firstname: 'Jamie',
         subscriptions: [],
         paid: false,

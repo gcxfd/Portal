@@ -5,7 +5,7 @@ import {offer as FixtureOffer, site as FixtureSite, member as FixtureMember} fro
 import setupGhostApi from '../utils/api.js';
 
 const offerSetup = async ({site, member = null, offer}) => {
-    const ghostApi = setupGhostApi({siteUrl: 'https://example.com'});
+    const ghostApi = setupGhostApi({siteUrl: 'https://abc.com'});
     ghostApi.init = jest.fn(() => {
         return Promise.resolve({
             site,
@@ -72,7 +72,7 @@ const offerSetup = async ({site, member = null, offer}) => {
 };
 
 const setup = async ({site, member = null}) => {
-    const ghostApi = setupGhostApi({siteUrl: 'https://example.com'});
+    const ghostApi = setupGhostApi({siteUrl: 'https://abc.com'});
     ghostApi.init = jest.fn(() => {
         return Promise.resolve({
             site,
@@ -127,7 +127,7 @@ const setup = async ({site, member = null}) => {
 };
 
 const multiTierSetup = async ({site, member = null}) => {
-    const ghostApi = setupGhostApi({siteUrl: 'https://example.com'});
+    const ghostApi = setupGhostApi({siteUrl: 'https://abc.com'});
     ghostApi.init = jest.fn(() => {
         return Promise.resolve({
             site,
@@ -277,12 +277,12 @@ describe('Logged-in free member', () => {
             expect(offerName).toBeInTheDocument();
             expect(offerDescription).toBeInTheDocument();
 
-            expect(emailInput).toHaveValue('jimmie@example.com');
+            expect(emailInput).toHaveValue('jimmie@abc.com');
             expect(nameInput).toHaveValue('Jimmie Larson');
             fireEvent.click(submitButton);
 
             expect(ghostApi.member.checkoutPlan).toHaveBeenLastCalledWith({
-                email: 'jimmie@example.com',
+                email: 'jimmie@abc.com',
                 name: 'Jimmie Larson',
                 offerId,
                 plan: planId
@@ -391,12 +391,12 @@ describe('Logged-in free member', () => {
             expect(offerName).toBeInTheDocument();
             expect(offerDescription).toBeInTheDocument();
 
-            expect(emailInput).toHaveValue('jimmie@example.com');
+            expect(emailInput).toHaveValue('jimmie@abc.com');
             expect(nameInput).toHaveValue('Jimmie Larson');
             fireEvent.click(submitButton);
 
             expect(ghostApi.member.checkoutPlan).toHaveBeenLastCalledWith({
-                email: 'jimmie@example.com',
+                email: 'jimmie@abc.com',
                 name: 'Jimmie Larson',
                 offerId,
                 plan: planId

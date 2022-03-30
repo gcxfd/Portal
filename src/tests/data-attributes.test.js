@@ -47,7 +47,7 @@ function getMockData() {
             querySelector: (elem) => {
                 if (elem === 'input[data-members-email]') {
                     return {
-                        value: 'jamie@example.com'
+                        value: '123@abc.com'
                     };
                 }
                 if (elem === 'input[data-members-name]') {
@@ -131,7 +131,7 @@ describe('Member Data attributes:', () => {
 
             expect(window.fetch).toHaveBeenCalledTimes(1);
 
-            expect(window.fetch).toHaveBeenCalledWith('https://portal.localhost/members/api/send-magic-link/', {body: '{"email":"jamie@example.com","emailType":"signup","labels":["Gold"],"name":"Jamie Larsen"}', headers: {'Content-Type': 'application/json'}, method: 'POST'});
+            expect(window.fetch).toHaveBeenCalledWith('https://portal.localhost/members/api/send-magic-link/', {body: '{"email":"123@abc.com","emailType":"signup","labels":["Gold"],"name":"Jamie Larsen"}', headers: {'Content-Type': 'application/json'}, method: 'POST'});
         });
     });
 
@@ -183,7 +183,7 @@ describe('Member Data attributes:', () => {
 });
 
 const setup = async ({site, member = null, showPopup = true}) => {
-    const ghostApi = setupGhostApi({siteUrl: 'https://example.com'});
+    const ghostApi = setupGhostApi({siteUrl: 'https://abc.com'});
     ghostApi.init = jest.fn(() => {
         return Promise.resolve({
             site,

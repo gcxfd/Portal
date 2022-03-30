@@ -40,7 +40,7 @@ describe('SignupPage', () => {
     test('can call signup action with name, email and plan', () => {
         const {nameInput, emailInput, chooseButton, mockOnActionFn} = setup();
         const nameVal = 'J Smith';
-        const emailVal = 'jsmith@example.com';
+        const emailVal = 'jsmith@abc.com';
         const planVal = 'free';
 
         fireEvent.change(nameInput, {target: {value: nameVal}});
