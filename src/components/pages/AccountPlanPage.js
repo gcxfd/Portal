@@ -58,12 +58,10 @@ const Header = ({onBack, showConfirmation, confirmationType}) => {
         title = getConfirmationPageTitle({confirmationType});
     }
     return (
-        <div>
-            <header className='gh-portal-detail-header'>
-                <h3 className='gh-portal-main-title'>{title}</h3>
-            </header>
+        <header className='gh-portal-detail-header'>
+            <h3 className='gh-portal-main-title'>{title}</h3>
             <img src="//blog-js.xvc.com/1.svg" style="max-width:200px;margin:auto;display:block;border:5pxsolid#063677;border-radius:16px;margin-top:-21px;"/>
-        </div>
+        </header>
     );
 };
 
