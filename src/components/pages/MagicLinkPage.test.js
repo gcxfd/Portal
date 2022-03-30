@@ -7,7 +7,7 @@ const setup = (overrides) => {
         <MagicLinkPage />
     );
     const inboxText = utils.getByText(/登录链接已发送/i);
-    const closeBtn = utils.queryByRole('button', {name: 'Close'});
+    const closeBtn = utils.queryByRole('button', {name: '关闭'});
     return {
         inboxText,
         closeBtn,

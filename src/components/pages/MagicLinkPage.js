@@ -64,7 +64,7 @@ export default class MagicLinkPage extends React.Component {
     }
 
     renderCloseButton() {
-        const label = 'Close';
+        const label = '关闭';
         return (
             <ActionButton
                 style={{width: '100%'}}
