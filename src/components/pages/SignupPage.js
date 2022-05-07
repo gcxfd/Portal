@@ -60,8 +60,12 @@ export const SignupPageStyles = `
     margin-top: 12px;
 }
 
-.gh-portal-signup-logo + .gh-portal-main-title {
-    margin: 4px 0 0;
+.gh-portal-main-title {
+    background: url(//blog-file.xvc.com/xvc-black.svg) 50% 50% / cover;
+    overflow: hidden;
+    text-indent: -999px;
+    width: 133px;
+    height: 38px;
 }
 
 .gh-portal-signup-header .gh-portal-main-subtitle {
