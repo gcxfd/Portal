@@ -76,7 +76,6 @@
   },
   "devDependencies": {
     "@rmw/coffee-loader": "^0.0.4",
-    "@rmw/thisdir": "^0.0.2",
     "chalk": "4.1.2",
     "chokidar": "3.5.2",
     "copy-webpack-plugin": "6.4.1",
