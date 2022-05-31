@@ -269,7 +269,7 @@ describe('Signup', () => {
             expect(fullAccessTitle).not.toBeInTheDocument();
             expect(signinButton).toBeInTheDocument();
             expect(submitButton).not.toBeInTheDocument();
-            submitButton = within(popupIframeDocument).queryByRole('button', {name: '注册'});
+            submitButton = within(popupIframeDocument).queryByRole('button', {name: '注册并订阅'});
 
             fireEvent.change(emailInput, {target: {value: '123@abc.com'}});
             fireEvent.change(nameInput, {target: {value: 'Jamie Larsen'}});
@@ -606,7 +606,7 @@ describe('Signup', () => {
             expect(freePlanTitle.length).toBe(0);
             expect(signinButton).toBeInTheDocument();
             expect(submitButton).not.toBeInTheDocument();
-            submitButton = within(popupIframeDocument).queryByRole('button', {name: '注册'});
+            submitButton = within(popupIframeDocument).queryByRole('button', {name: '注册并订阅'});
 
             fireEvent.change(emailInput, {target: {value: '123@abc.com'}});
             fireEvent.change(nameInput, {target: {value: 'Jamie Larsen'}});
