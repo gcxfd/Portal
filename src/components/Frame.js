@@ -4,7 +4,7 @@ import {createPortal} from 'react-dom';
 export default class Frame extends Component {
     componentDidMount() {
         let node = this.node;
-        node.contentWindow.document.write('<!DOCTYPE html>'); 
+        //node.contentWindow.document.write('<!DOCTYPE html>'); 
         node.addEventListener('load', this.handleLoad);
     }
 
@@ -28,7 +28,7 @@ export default class Frame extends Component {
     render() {
         const {children, head, title = '', style = {}, ...rest} = this.props;
         return (
-            <iframe srcDoc="about:blank" {...rest} ref={node => (this.node = node)} title={title} style={style} frameBorder="0">
+            <iframe srcDoc={`<!DOCTYPE html>`} {...rest} ref={node => (this.node = node)} title={title} style={style} frameBorder="0">
                 {this.iframeHead && createPortal(head, this.iframeHead)}
                 {this.iframeRoot && createPortal(children, this.iframeRoot)}
             </iframe>
