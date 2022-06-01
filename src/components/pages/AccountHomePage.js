@@ -329,7 +329,7 @@ const AccountActions = () => {
         onAction('updateNewsletter', {subscribed: !sub});
     };
 
-    let label = subscribed ? 'Subscribed' : 'Unsubscribed';
+    let label = subscribed ? '开启推送' : '关闭推送';
     return (
         <div>
             <div className='gh-portal-list'>
@@ -345,7 +345,7 @@ const AccountActions = () => {
                 <EmailPreferencesAction />
                 <section>
                     <div className='gh-portal-list-detail'>
-                        <h3>Email newsletter</h3>
+                        <h3>邮件推送</h3>
                         <p>{label}</p>
                     </div>
                     <div>
