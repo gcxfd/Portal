@@ -391,7 +391,7 @@ class SignupPage extends React.Component {
 
         let label = 'Continue';
         if (hasOnlyFreePlan({site})) {
-            label = '注册';
+            label = '注册并订阅';
         } else {
             return null;
         }
